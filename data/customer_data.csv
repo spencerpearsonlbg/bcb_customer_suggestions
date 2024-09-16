@@ -1,0 +1,4 @@
+bus_id,business_name,business_type,industry,address,owner_name,employees,credit_score
+"0001",FitLife Fitness,Limited Liability Company,Fitness and Recreation,"123 Main Street, Anytown, CA 91234",John Smith,25,720
+"0002",Green Acres Farm,Limited Liability Company,Agriculture,"456 Country Road, Sunnyville, CA 95678",Emily Jones,15,750
+"0003",The Book Nook,Limited Liability Company,Retail,"789 Oak Avenue, Townville, CA 12345",Sarah Lee,10,780

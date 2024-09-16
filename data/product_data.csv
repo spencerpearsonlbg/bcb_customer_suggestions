@@ -1,0 +1,9 @@
+bus_id,product,account_number,balance,rate,term
+"0001",Current Account,1234567890,25000,,
+"0001",Savings Account,9876543210,10000,,
+"0001",Asset Finance,ABC12345,50000,5.5,2007
+"0002",Current Account,3141592653,30000,,
+"0002",Loan,DEF67890,40000,4.25,2737
+"0003",Current Account,5432109876,15000,,
+"0003",Savings Account,0987654321,5000,,
+"0003",Overdraft,GHI01234,2500,6.75,
