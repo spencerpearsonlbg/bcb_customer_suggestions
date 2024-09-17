@@ -41,4 +41,4 @@ def api_run():
         api.render()
 
     app.queue(default_concurrency_limit=3)
-    app.launch(share=True, auth=("GENAIBCB", "GENAIBCBPWD"))
+    app.launch(share=True)

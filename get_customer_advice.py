@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-# from gradio_interface.gradio_call import call_gradio_api 
+from gradio_interface.gradio_call import call_gradio_api 
 
 
 def get_customer_advice(
@@ -15,9 +15,9 @@ def get_customer_advice(
     )
     prompt = prompter.generate_prompt()
 
-    # call_gradio_api(prompt)
+    result = call_gradio_api(prompt)
 
-    st.session_state['customer_advice'] = prompt
+    st.session_state['customer_advice'] = result
 
 
 class prompting():
@@ -36,6 +36,13 @@ class prompting():
             "banking advice to this customer. The aim of the advice is to give them hints to how "
             "they can better manage their business banking products. If their is no obvious advice "
             "that you can give them, you should also make this clear."
+            """
+            Response format:
+            You do not need to explain your response
+            Only response with the advice text
+            The response should be under 150 characters
+            """
+            
         )
 
     def format_product_data(self, data):

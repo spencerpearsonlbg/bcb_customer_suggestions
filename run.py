@@ -56,9 +56,8 @@ if __name__=="__main__":
     selected_business_data = business_data[business_data["business_name"] == selected_business]
     selected_products = product_data[product_data["bus_id"] == selected_business_data["bus_id"].iloc[0]]["product"]
 
-    with st.container():
 
-        # Create dropdown for product selection
+    with st.container():
         st.sidebar.header("Select Product")
         selected_product = st.sidebar.selectbox("", selected_products, label_visibility="collapsed")
 
