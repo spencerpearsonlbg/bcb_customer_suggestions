@@ -37,11 +37,11 @@ class prompting():
             "bank can offer. If there is no obvious advice "
             "that you can give them, you should also make this clear."
             """
-            
+
             Response format:
             You do not need to explain your response
             Only response with the advice text
-            The response should be under 150 characters
+            The response should be under 200 characters
             """
             
         )
