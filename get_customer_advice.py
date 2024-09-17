@@ -32,11 +32,12 @@ class prompting():
         self.formated_transactions = formated_transactions
 
         self.system_instruction = (
-            "You are to analyse a series of csv files from an individual companies data to give "
-            "banking advice to this customer. The aim of the advice is to give them hints to how "
-            "they can better manage their business banking products. If their is no obvious advice "
+            "You analyse a series of csv files from company data to give "
+            "banking advice to business customers. The advice must relte to banking products that lloyds "
+            "bank can offer. If there is no obvious advice "
             "that you can give them, you should also make this clear."
             """
+            
             Response format:
             You do not need to explain your response
             Only response with the advice text
