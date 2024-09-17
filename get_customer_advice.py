@@ -41,7 +41,7 @@ class prompting():
             Response format:
             You do not need to explain your response
             Only response with the advice text
-            The response should be under 200 characters
+            The response should be under 100 characters
             """
             
         )
