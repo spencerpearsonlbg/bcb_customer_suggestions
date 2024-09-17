@@ -34,7 +34,7 @@ class prompting():
         self.system_instruction = (
             "You analyse a series of csv files from company data to give "
             "banking advice to business customers. The advice must relte to banking products that lloyds "
-            "bank can offer. If there is no obvious advice "
+            "bank can offer that they do not already have. If there is no obvious advice "
             "that you can give them, you should also make this clear."
             """
 
@@ -50,12 +50,11 @@ class prompting():
         formatted_product_data = pd.DataFrame(
             {
                 "Product": data["product"],
-                "Account Number": data["account_number"],
                 "Balance": data["balance"],
                 "Rate": data["rate"],
                 "Term": data["term"],
             }
-        ).T
+        )
         return formatted_product_data
 
     def generate_prompt(self):
